@@ -1,0 +1,17 @@
+[
+    {
+        "model":"recipeBook.Recipe",
+        "pk":1,
+        "fields": {
+            "name":"Pizza"
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":1,
+        "fields":{
+            "name":"Pizza Sauce", 
+            "recipes":[1]
+        }
+    }
+]
