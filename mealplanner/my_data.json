@@ -3,7 +3,8 @@
         "model":"recipeBook.Recipe",
         "pk":1,
         "fields": {
-            "name":"Pizza"
+            "name":"Pizza",
+            "ingredients":[1]
         }
     },
     {
@@ -11,8 +12,7 @@
         "pk":1,
         "fields":{
             "name":"Pizza Sauce", 
-            "quantity":1,
-            "recipes":[1]
+            "quantity":1
         }
     }
 ]

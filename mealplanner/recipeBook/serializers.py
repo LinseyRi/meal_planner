@@ -11,8 +11,8 @@ class IngredientDetailSerializer(serializers.ModelSerializer):
         ]
 
 class RecipeListSerializer(serializers.ModelSerializer):
+    absolute_url = serializers.SerializerMethodField()
     ingredients = IngredientDetailSerializer(many=True, read_only=True)
-    # absolute_url = serializers.SerializerMethodField()
 
     class Meta:
         model = Recipe
@@ -20,11 +20,12 @@ class RecipeListSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "ingredients", 
-            # "absolute_url",
+            "absolute_url",
         ]
+        depth = 1
 
-    # def get_absolute_url(self, obj):
-    #     return reverse('recipe_detail', args=(obj.pk,))
+    def get_absolute_url(self, obj):
+        return reverse('recipe_detail', args=(obj.pk,))
 
 
 class RecipeDetailSerializer(serializers.ModelSerializer):
@@ -37,3 +38,4 @@ class RecipeDetailSerializer(serializers.ModelSerializer):
             "name",
             "ingredients", 
         ]
+        depth = 1
