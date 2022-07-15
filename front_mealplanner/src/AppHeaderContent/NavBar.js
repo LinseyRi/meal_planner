@@ -6,7 +6,7 @@ export default function NavBar() {
         <nav className='nav-bar'>
             <div className='dropdown'>
                 <button className='drop-btn'>
-                    <i class="fa-solid fa-bars"></i>
+                    <i className="fa-solid fa-bars"></i>
                 </button>
                 <div className='dropdown-content'>
                     <div className='nav-link'><a href="">Home</a></div>

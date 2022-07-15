@@ -12,3 +12,9 @@
 .app-header h1 {
     margin-left: 2em; 
 }
+
+@media only screen and (min-width: 600px ) {
+    .app-header {
+        height: 13vh; 
+    }
+}
