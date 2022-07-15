@@ -31,9 +31,9 @@ class RecipeDetailSerializer(serializers.ModelSerializer):
     ingredients = IngredientDetailSerializer(many=True, read_only=True)
 
     class Meta: 
+        model = Recipe
         fields = [
             "id",
             "name",
             "ingredients", 
-            # "absolute_url",
         ]
