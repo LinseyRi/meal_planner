@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework import generics, viewsets
 from rest_framework.response import Response
-from .serializers import IngredientDetailSerializer, RecipeListSerializer, RecipeDetailSerializer
+from .serializers import IngredientDetailSerializer, IngredientListSerializer, RecipeListSerializer, RecipeDetailSerializer
 from .models import Recipe, Ingredient
 
 # Create your views here.
@@ -10,6 +10,10 @@ from .models import Recipe, Ingredient
 class RecipeListAPIView(generics.ListAPIView):
     queryset = Recipe.objects.all()
     serializer_class = RecipeListSerializer
+
+class IngredientListAPIView(generics.ListAPIView):
+    queryset = Ingredient.objects.all()
+    serializer_class = IngredientListSerializer
 
 class IngredientDetailAPIView(generics.RetrieveAPIView):
     lookup_field = "id"
@@ -41,8 +45,22 @@ class IngredientRetrieveUpdateAPIView(generics.RetrieveUpdateAPIView):
     queryset = Ingredient.objects.all() 
     serializer_class = IngredientDetailSerializer
 
+# DESTROY VIEWS 
+class RecipeDestroyAPIView(generics.DestroyAPIView):
+    lookup_field = "id"
+    queryset = Recipe.objects.all()
 
-# EXPERIMENT WITH CREATE 
+class IngredientDestroyAPIView(generics.DestroyAPIView):
+    lookup_field = "id"
+    queryset = Ingredient.objects.all()
+
+#######################################################
+
+# EXPERIMENT WITH MODEL VIEW SET 
+# TODO: Implement post request for to pass data into api 
+# NEEDS A LOT OF WORK
+
+#######################################################
 class RecipeCreateSet(viewsets.ModelViewSet):
     queryset = Recipe.objects.all()
     serializer_class = RecipeDetailSerializer

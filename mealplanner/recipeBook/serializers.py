@@ -10,6 +10,16 @@ class IngredientDetailSerializer(serializers.ModelSerializer):
             "quantity",
         ]
 
+class IngredientListSerializer(serializers.ModelSerializer):
+
+    class Meta: 
+        model = Ingredient
+        fields = [
+            "id",
+            "name",
+            "quantity",
+        ]
+
 class RecipeListSerializer(serializers.ModelSerializer):
     absolute_url = serializers.SerializerMethodField()
     ingredients = IngredientDetailSerializer(many=True, read_only=True)
