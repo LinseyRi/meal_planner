@@ -11,6 +11,7 @@
         "pk":1,
         "fields":{
             "name":"Pizza Sauce", 
+            "quantity":1,
             "recipes":[1]
         }
     }

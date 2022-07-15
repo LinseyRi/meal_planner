@@ -10,8 +10,9 @@ class Recipe(models.Model):
 
 class Ingredient(models.Model):
     name = models.CharField(max_length=200)
-    recipes = models.ManyToManyField(Recipe, related_name="recipes")
+    quantity = models.IntegerField(default=1)
+    recipes = models.ManyToManyField(Recipe, related_name="ingredients")
 
     def __str__(self):
-        return f'{self.name}'
+        return f'{self.name}, quantity: {self.quantity}'
 
