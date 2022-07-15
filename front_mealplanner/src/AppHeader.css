@@ -1,0 +1,14 @@
+
+.app-header {
+    background-color: var(--main-dark);
+    color: var(--main-light); 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+.app-header h1 {
+    margin-left: 2em; 
+}
