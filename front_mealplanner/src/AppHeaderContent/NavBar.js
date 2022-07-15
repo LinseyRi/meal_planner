@@ -1,4 +1,5 @@
 import { useState, useEffect, useReducer } from 'react'; 
+import { Link } from "react-router-dom"; 
 import './NavBar.css';
 
 export default function NavBar() {
@@ -9,9 +10,9 @@ export default function NavBar() {
                     <i className="fa-solid fa-bars"></i>
                 </button>
                 <div className='dropdown-content'>
-                    <div className='nav-link'><a href="">Home</a></div>
-                    <div className='nav-link'><a href="">Recipes</a></div>
-                    <div className='nav-link'><a href="">Ingredients</a></div>
+                    <Link className="nav-link" to="/">Home</Link>
+                    <Link className='nav-link' to="/recipes">Recipes</Link>
+                    <a className='nav-link' href="">Ingredients</a>
                 </div>
             </div>
         </nav>

@@ -6,7 +6,6 @@
     color: var(--main-light);
     float: left; 
     font-size: 1.5em; 
-    text-align: center;
     padding: 0.5em; 
     text-decoration: none;
 }
@@ -27,9 +26,6 @@
     margin: 0; 
 }
 
-.nav-link {
-    width: 100%; 
-}
 
 .nav-bar .nav-link:hover, 
 .dropdown:hover .drop-btn {
@@ -37,7 +33,7 @@
 }
 
 .dropdown-content {
-    display: none; 
+    display: none;
     position: absolute; 
     left: 0px; 
     background-color: var(--main-grey);
@@ -48,7 +44,11 @@
 
 .dropdown:hover .dropdown-content {
     display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: flex-start; 
+}
+
+.nav-link {
+    width: 100vw; 
 }

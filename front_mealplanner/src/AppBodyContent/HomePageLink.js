@@ -1,4 +1,5 @@
 import { useState, useEffect, useReducer } from 'react'; 
+import { Link } from "react-router-dom"; 
 import './HomePageLinks.css'; 
 
 export default function HomePageLink({ linkTitle, linkURL, iconClass }) {
@@ -8,7 +9,7 @@ export default function HomePageLink({ linkTitle, linkURL, iconClass }) {
 
     return (
         <div className='home-page-links'>
-            <i className={ iconClass }></i><a href={ linkURL }>{ linkTitle }</a>
+            <i className={ iconClass }></i><Link to={ linkURL }>{ linkTitle }</Link>
         </div>
     )
 }
