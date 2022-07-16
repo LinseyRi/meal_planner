@@ -3,8 +3,16 @@
         "model":"recipeBook.Recipe",
         "pk":1,
         "fields": {
-            "name":"Pizza",
-            "ingredients":[1]
+            "name":"Nanniza",
+            "ingredients":[1, 5, 8, 9, 10, 11, 12, 13]
+        }
+    },
+    {
+        "model":"recipeBook.Recipe",
+        "pk":2,
+        "fields": {
+            "name":"Cheese Burgers",
+            "ingredients":[2,3,4,5,6,7]
         }
     },
     {
@@ -12,6 +20,102 @@
         "pk":1,
         "fields":{
             "name":"Pizza Sauce", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":2,
+        "fields":{
+            "name":"Brioche Buns", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":3,
+        "fields":{
+            "name":"Burger Patties", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":4,
+        "fields":{
+            "name":"Cheese", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":5,
+        "fields":{
+            "name":"Tomatoes", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":6,
+        "fields":{
+            "name":"Salad", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":7,
+        "fields":{
+            "name":"Potato Wedges", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":8,
+        "fields":{
+            "name":"Baby Spinach", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":9,
+        "fields":{
+            "name":"Goats Cheese", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":10,
+        "fields":{
+            "name":"Naan Breads", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":11,
+        "fields":{
+            "name":"Italian Hard Cheese", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":12,
+        "fields":{
+            "name":"Onion Marmalade", 
+            "quantity":1
+        }
+    },
+    {
+        "model":"recipeBook.Ingredient",
+        "pk":13,
+        "fields":{
+            "name":"Rocket Salad", 
             "quantity":1
         }
     }
