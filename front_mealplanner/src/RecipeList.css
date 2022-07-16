@@ -1,0 +1,21 @@
+.recipe-list {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.recipe-list li {
+    padding: 0.5em 1em;
+    width: 100vw; 
+    font-size: 2em;
+    border-bottom: 1px solid var(--main-grey);
+    color: var(--main-dark)
+}
+
+.recipe-list li i {
+    margin-right: 0.3em;
+}

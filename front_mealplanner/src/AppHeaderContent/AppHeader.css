@@ -11,10 +11,39 @@
 
 .app-header h1 {
     margin-left: 2em; 
+    color: var(--main-light);
+}
+
+.app-header a {
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 600px ) {
     .app-header {
         height: 13vh; 
+    }
+}
+
+.subheader {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    background-color: var(--main-grey);
+}
+
+.subheader h2 {
+    font-size: 2em;
+    color: var(--main-light);
+    padding: 0.5em; 
+}
+
+@media only screen and (min-width: 600px ) {
+    .subheader {
+        justify-content: flex-start; 
+    }
+
+    .subheader h2 {
+        margin-left: 2em;
     }
 }

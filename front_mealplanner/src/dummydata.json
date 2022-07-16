@@ -1,0 +1,12 @@
+[
+    {
+        "id":1, 
+        "name":"Nanniza",
+        "ingredients": ["Naan Bread", "Pizza Sauce", "Spinach"]
+    },
+    {
+        "id": 2, 
+        "name": "Burgers", 
+        "ingredients": ["Brioche Buns", "Burger Patties", "Cheese"]
+    }
+]
